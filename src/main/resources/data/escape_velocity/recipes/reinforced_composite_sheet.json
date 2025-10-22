@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:glass_fiber"
+    },
+    "b": {
+      "item": "escape_velocity:reinforced_fabric"
+    },
+    "c": {
+      "item": "escape_velocity:rubber_sheet"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:reinforced_composite_sheet",
+    "count": 2
+  }
+}

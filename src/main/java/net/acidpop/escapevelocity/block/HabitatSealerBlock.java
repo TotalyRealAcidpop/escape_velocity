@@ -1,6 +1,9 @@
 
 package net.acidpop.escapevelocity.block;
 
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,11 +14,24 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.acidpop.escapevelocity.world.inventory.HabitatSealerUIMenu;
+import net.acidpop.escapevelocity.procedures.HabitatSealerTickProcedure;
 import net.acidpop.escapevelocity.block.entity.HabitatSealerBlockEntity;
+
+import io.netty.buffer.Unpooled;
 
 public class HabitatSealerBlock extends Block implements EntityBlock {
 	public HabitatSealerBlock() {
@@ -25,6 +41,41 @@ public class HabitatSealerBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 50);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		HabitatSealerTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 10);
+	}
+
+	@Override
+	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+		super.use(blockstate, world, pos, entity, hand, hit);
+		if (entity instanceof ServerPlayer player) {
+			NetworkHooks.openScreen(player, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("Habitat Sealer");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new HabitatSealerUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+				}
+			}, pos);
+		}
+		return InteractionResult.SUCCESS;
 	}
 
 	@Override

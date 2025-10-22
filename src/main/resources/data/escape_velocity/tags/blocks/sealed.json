@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "escape_velocity:reinforced_glass",
-    "escape_velocity:power_node"
+    "escape_velocity:power_node",
+    "escape_velocity:sealed_cable"
   ]
 }

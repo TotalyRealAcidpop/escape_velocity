@@ -51,5 +51,18 @@ public class ItemTooltipsProcedure {
 				tooltip.add(Component.literal("Hold shift for info"));
 			}
 		}
+		if (EscapeVelocityModItems.LUNAR_ROCKET.get() == itemstack.getItem() || EscapeVelocityModItems.LUNAR_LANDER_ITEM.get() == itemstack.getItem()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("Sneak+Right click on placed vehicle to pick it up"));
+			} else {
+				tooltip.add(Component.literal("Hold shift for info"));
+			}
+		}
+		if (EscapeVelocityModItems.LUNAR_REGOLITH_DUST.get() == itemstack.getItem()) {
+			tooltip.add(Component.literal("W.I.P"));
+		}
+		if (EscapeVelocityModItems.OIL_REFINERY.get() == itemstack.getItem()) {
+			tooltip.add(Component.literal("Currently doesnt work"));
+		}
 	}
 }

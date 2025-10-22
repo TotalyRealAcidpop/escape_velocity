@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:rocket_sheet"
+    },
+    "b": {
+      "item": "escape_velocity:fluid_tank"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:lunar_booster",
+    "count": 1
+  }
+}

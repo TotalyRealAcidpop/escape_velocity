@@ -8,6 +8,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -19,14 +20,15 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.acidpop.escapevelocity.network.OilRefineryCrudeUISlotMessage;
 import net.acidpop.escapevelocity.init.EscapeVelocityModMenus;
-import net.acidpop.escapevelocity.init.EscapeVelocityModItems;
+import net.acidpop.escapevelocity.EscapeVelocityMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class LunaRocketGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class OilRefineryCrudeUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -39,8 +41,8 @@ public class LunaRocketGUIMenu extends AbstractContainerMenu implements Supplier
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public LunaRocketGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(EscapeVelocityModMenus.LUNA_ROCKET_GUI.get(), id);
+	public OilRefineryCrudeUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(EscapeVelocityModMenus.OIL_REFINERY_CRUDE_UI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(2);
@@ -78,31 +80,55 @@ public class LunaRocketGUIMenu extends AbstractContainerMenu implements Supplier
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 21, 48) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 156, 25) {
 			private final int slot = 0;
-			private int x = LunaRocketGUIMenu.this.x;
-			private int y = LunaRocketGUIMenu.this.y;
+			private int x = OilRefineryCrudeUIMenu.this.x;
+			private int y = OilRefineryCrudeUIMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return EscapeVelocityModItems.KEROSENE_BUCKET.get() == stack.getItem();
+				return Items.WATER_BUCKET == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 138, 48) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 156, 72) {
 			private final int slot = 1;
-			private int x = LunaRocketGUIMenu.this.x;
-			private int y = LunaRocketGUIMenu.this.y;
+			private int x = OilRefineryCrudeUIMenu.this.x;
+			private int y = OilRefineryCrudeUIMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return EscapeVelocityModItems.LIQUID_OXYGEN_BUCKET.get() == stack.getItem();
+				return false;
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 93 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 4 + 8 + sj * 18, 90 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 93 + 142));
+			this.addSlot(new Slot(inv, si, 4 + 8 + si * 18, 90 + 142));
 	}
 
 	@Override
@@ -239,6 +265,13 @@ public class LunaRocketGUIMenu extends AbstractContainerMenu implements Supplier
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			EscapeVelocityMod.PACKET_HANDLER.sendToServer(new OilRefineryCrudeUISlotMessage(slotid, x, y, z, ctype, meta));
+			OilRefineryCrudeUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

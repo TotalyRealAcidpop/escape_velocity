@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:advanced_alloy_mesh"
+    },
+    "b": {
+      "item": "escape_velocity:reinforced_composite_sheet"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:rocket_sheet",
+    "count": 1
+  }
+}

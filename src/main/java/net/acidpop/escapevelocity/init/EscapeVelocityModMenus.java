@@ -11,8 +11,10 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.acidpop.escapevelocity.world.inventory.RocketCraftingGUIMenu;
 import net.acidpop.escapevelocity.world.inventory.PowerNodeUIMenu;
-import net.acidpop.escapevelocity.world.inventory.LunaRocketGUIMenu;
+import net.acidpop.escapevelocity.world.inventory.OilRefineryCrudeUIMenu;
+import net.acidpop.escapevelocity.world.inventory.HabitatSealerUIMenu;
 import net.acidpop.escapevelocity.world.inventory.ElectrolyzerTopUIMenu;
 import net.acidpop.escapevelocity.world.inventory.ElectrolyzerRightUIMenu;
 import net.acidpop.escapevelocity.world.inventory.ElectrolyzerLeftUIMenu;
@@ -24,5 +26,7 @@ public class EscapeVelocityModMenus {
 	public static final RegistryObject<MenuType<ElectrolyzerTopUIMenu>> ELECTROLYZER_TOP_UI = REGISTRY.register("electrolyzer_top_ui", () -> IForgeMenuType.create(ElectrolyzerTopUIMenu::new));
 	public static final RegistryObject<MenuType<ElectrolyzerLeftUIMenu>> ELECTROLYZER_LEFT_UI = REGISTRY.register("electrolyzer_left_ui", () -> IForgeMenuType.create(ElectrolyzerLeftUIMenu::new));
 	public static final RegistryObject<MenuType<ElectrolyzerRightUIMenu>> ELECTROLYZER_RIGHT_UI = REGISTRY.register("electrolyzer_right_ui", () -> IForgeMenuType.create(ElectrolyzerRightUIMenu::new));
-	public static final RegistryObject<MenuType<LunaRocketGUIMenu>> LUNA_ROCKET_GUI = REGISTRY.register("luna_rocket_gui", () -> IForgeMenuType.create(LunaRocketGUIMenu::new));
+	public static final RegistryObject<MenuType<RocketCraftingGUIMenu>> ROCKET_CRAFTING_GUI = REGISTRY.register("rocket_crafting_gui", () -> IForgeMenuType.create(RocketCraftingGUIMenu::new));
+	public static final RegistryObject<MenuType<HabitatSealerUIMenu>> HABITAT_SEALER_UI = REGISTRY.register("habitat_sealer_ui", () -> IForgeMenuType.create(HabitatSealerUIMenu::new));
+	public static final RegistryObject<MenuType<OilRefineryCrudeUIMenu>> OIL_REFINERY_CRUDE_UI = REGISTRY.register("oil_refinery_crude_ui", () -> IForgeMenuType.create(OilRefineryCrudeUIMenu::new));
 }

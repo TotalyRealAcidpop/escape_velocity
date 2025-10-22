@@ -1,14 +1,10 @@
 {
   "replace": false,
   "values": [
+    "escape_velocity:rocket_builder",
     "escape_velocity:aluminium_ore",
-    "escape_velocity:industrial_furnace",
-    "escape_velocity:solar_panel",
-    "escape_velocity:steel_frame",
     "escape_velocity:nickel_ore",
-    "escape_velocity:nickel_frame",
     "escape_velocity:power_node",
-    "escape_velocity:fluid_tank",
     "escape_velocity:steel_block",
     "escape_velocity:lunar_basalt"
   ]

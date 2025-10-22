@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "escape_velocity:crude_oil_bucket"
+    },
+    {
+      "item": "escape_velocity:quartz_dust"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "item": "escape_velocity:kerosene_bucket",
+    "count": 1
+  }
+}

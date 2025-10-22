@@ -9,13 +9,10 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.Minecraft;
 
-import net.acidpop.escapevelocity.init.EscapeVelocityModParticleTypes;
 import net.acidpop.escapevelocity.entity.RegolithCollectorEntity;
 
 import javax.annotation.Nullable;
@@ -76,13 +73,6 @@ public class DrivingControllerProcedure {
 						(entity.getVehicle()).getPersistentData().putDouble("acceleration", (Math.min(1, Math.max((entity.getVehicle()).getPersistentData().getDouble("acceleration") - 0.1, -1))));
 					}
 					if ((entity.getVehicle()).getPersistentData().getDouble("acceleration") != 0) {
-						if (world.getBlockFloorHeight(BlockPos.containing((entity.getVehicle()).getX(), (entity.getVehicle()).getY() - 1, (entity.getVehicle()).getZ())) > 0) {
-							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (EscapeVelocityModParticleTypes.REGOLITH_COLLECTOR_TRAIL.get()),
-										(Math.sin((entity.getVehicle()).getYRot() * (Math.PI / 180)) * (-1) * 0.35 * (entity.getVehicle()).getPersistentData().getDouble("acceleration") * (-10) + (entity.getVehicle()).getX()),
-										((entity.getVehicle()).getY()), (Math.cos((entity.getVehicle()).getYRot() * (Math.PI / 180)) * 0.35 * (entity.getVehicle()).getPersistentData().getDouble("acceleration") * (-10) + (entity.getVehicle()).getZ()),
-										5, 0.5, 0, 0.5, 0);
-						}
 						if (world.getBlockFloorHeight(
 								BlockPos.containing(Math.sin((entity.getVehicle()).getYRot() * (Math.PI / 180)) * (-1) * 0.35 * (entity.getVehicle()).getPersistentData().getDouble("acceleration") * 5 + (entity.getVehicle()).getX(),
 										(entity.getVehicle()).getY(), Math.cos((entity.getVehicle()).getYRot() * (Math.PI / 180)) * 0.35 * (entity.getVehicle()).getPersistentData().getDouble("acceleration") * 5 + (entity.getVehicle()).getZ())) > 0) {

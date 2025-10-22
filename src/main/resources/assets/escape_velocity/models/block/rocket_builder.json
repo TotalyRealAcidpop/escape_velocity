@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/composite_rocket_frame",
+    "up": "escape_velocity:block/composite_rocket_frame",
+    "north": "escape_velocity:block/composite_rocket_frame",
+    "east": "escape_velocity:block/composite_rocket_frame",
+    "south": "escape_velocity:block/composite_rocket_frame",
+    "west": "escape_velocity:block/composite_rocket_frame",
+    "particle": "escape_velocity:block/composite_rocket_frame"
+  },
+  "render_type": "solid"
+}

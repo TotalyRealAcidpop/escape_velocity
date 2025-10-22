@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.Block;
 import net.acidpop.escapevelocity.block.SteelFrameBlock;
 import net.acidpop.escapevelocity.block.SteelBlockBlock;
 import net.acidpop.escapevelocity.block.SolarPanelBlock;
+import net.acidpop.escapevelocity.block.SealedCableBlock;
+import net.acidpop.escapevelocity.block.RocketBuilderBlock;
 import net.acidpop.escapevelocity.block.ReinforcedGlassBlock;
 import net.acidpop.escapevelocity.block.RefractoryMixBlock;
 import net.acidpop.escapevelocity.block.RefractoryBrickBlock;
@@ -60,6 +62,8 @@ public class EscapeVelocityModBlocks {
 	public static final RegistryObject<Block> HYDROGEN = REGISTRY.register("hydrogen", () -> new HydrogenBlock());
 	public static final RegistryObject<Block> OXYGEN = REGISTRY.register("oxygen", () -> new OxygenBlock());
 	public static final RegistryObject<Block> ALUMINIUM_ORE = REGISTRY.register("aluminium_ore", () -> new AluminiumOreBlock());
+	public static final RegistryObject<Block> ROCKET_BUILDER = REGISTRY.register("rocket_builder", () -> new RocketBuilderBlock());
+	public static final RegistryObject<Block> SEALED_CABLE = REGISTRY.register("sealed_cable", () -> new SealedCableBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "escape_velocity:custom/lunar_rocket_cockpit",
+  "textures": {
+    "2": "escape_velocity:block/luna_rocket2",
+    "particle": "minecraft:item/amethyst_shard"
+  }
+}

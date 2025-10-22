@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:rubber_sheet"
+    },
+    "b": {
+      "item": "escape_velocity:nickel_frame"
+    },
+    "c": {
+      "item": "escape_velocity:fluid_tank"
+    },
+    "d": {
+      "item": "escape_velocity:power_node"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:habitat_sealer",
+    "count": 1
+  }
+}

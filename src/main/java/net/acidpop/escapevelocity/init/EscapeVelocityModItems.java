@@ -25,7 +25,9 @@ import net.acidpop.escapevelocity.item.SiliconItem;
 import net.acidpop.escapevelocity.item.SiliconDustItem;
 import net.acidpop.escapevelocity.item.SiliconCompoundItem;
 import net.acidpop.escapevelocity.item.RubberSheetItem;
+import net.acidpop.escapevelocity.item.RocketSheetItem;
 import net.acidpop.escapevelocity.item.ReinforcedFabricItem;
+import net.acidpop.escapevelocity.item.ReinforcedCompositeSheetItem;
 import net.acidpop.escapevelocity.item.RawNickelItem;
 import net.acidpop.escapevelocity.item.RawAluminiumItem;
 import net.acidpop.escapevelocity.item.QuartzDustItem;
@@ -37,7 +39,12 @@ import net.acidpop.escapevelocity.item.OilRefineryItem;
 import net.acidpop.escapevelocity.item.NickelIngotItem;
 import net.acidpop.escapevelocity.item.NaphthaItem;
 import net.acidpop.escapevelocity.item.LunarSuitItem;
+import net.acidpop.escapevelocity.item.LunarStrapOnBoosterItem;
+import net.acidpop.escapevelocity.item.LunarRocketItem;
 import net.acidpop.escapevelocity.item.LunarRegolithDustItem;
+import net.acidpop.escapevelocity.item.LunarLanderItemItem;
+import net.acidpop.escapevelocity.item.LunarCockpitItem;
+import net.acidpop.escapevelocity.item.LunarBoosterItem;
 import net.acidpop.escapevelocity.item.LiquidOxygenItem;
 import net.acidpop.escapevelocity.item.KeroseneItem;
 import net.acidpop.escapevelocity.item.HydrogenContainerItem;
@@ -54,6 +61,7 @@ import net.acidpop.escapevelocity.item.CircuitBoardItem;
 import net.acidpop.escapevelocity.item.BetaCompositeItem;
 import net.acidpop.escapevelocity.item.BetaClothItem;
 import net.acidpop.escapevelocity.item.AluminiumIngotItem;
+import net.acidpop.escapevelocity.item.AdvancedAlloyMeshItem;
 import net.acidpop.escapevelocity.EscapeVelocityMod;
 
 public class EscapeVelocityModItems {
@@ -73,7 +81,6 @@ public class EscapeVelocityModItems {
 	public static final RegistryObject<Item> POWER_NODE = block(EscapeVelocityModBlocks.POWER_NODE);
 	public static final RegistryObject<Item> VARIANT_CHANGER = REGISTRY.register("variant_changer", () -> new VariantChangerItem());
 	public static final RegistryObject<Item> STEEL_INGOT = REGISTRY.register("steel_ingot", () -> new SteelIngotItem());
-	public static final RegistryObject<Item> LUNA_ROCKET_SPAWN_EGG = REGISTRY.register("luna_rocket_spawn_egg", () -> new ForgeSpawnEggItem(EscapeVelocityModEntities.LUNA_ROCKET, -16737895, -1, new Item.Properties()));
 	public static final RegistryObject<Item> LUNAR_SUIT_HELMET = REGISTRY.register("lunar_suit_helmet", () -> new LunarSuitItem.Helmet());
 	public static final RegistryObject<Item> LUNAR_SUIT_CHESTPLATE = REGISTRY.register("lunar_suit_chestplate", () -> new LunarSuitItem.Chestplate());
 	public static final RegistryObject<Item> LUNAR_SUIT_LEGGINGS = REGISTRY.register("lunar_suit_leggings", () -> new LunarSuitItem.Leggings());
@@ -101,7 +108,6 @@ public class EscapeVelocityModItems {
 	public static final RegistryObject<Item> GAS_CONTAINER = REGISTRY.register("gas_container", () -> new GasContainerItem());
 	public static final RegistryObject<Item> HYDROGEN_CONTAINER = REGISTRY.register("hydrogen_container", () -> new HydrogenContainerItem());
 	public static final RegistryObject<Item> OXYGEN_CONTAINER = REGISTRY.register("oxygen_container", () -> new OxygenContainerItem());
-	public static final RegistryObject<Item> LUNAR_LANDER_SPAWN_EGG = REGISTRY.register("lunar_lander_spawn_egg", () -> new ForgeSpawnEggItem(EscapeVelocityModEntities.LUNAR_LANDER, -16737895, -1, new Item.Properties()));
 	public static final RegistryObject<Item> GLASS_FIBER = REGISTRY.register("glass_fiber", () -> new GlassFiberItem());
 	public static final RegistryObject<Item> REINFORCED_FABRIC = REGISTRY.register("reinforced_fabric", () -> new ReinforcedFabricItem());
 	public static final RegistryObject<Item> BETA_COMPOSITE = REGISTRY.register("beta_composite", () -> new BetaCompositeItem());
@@ -122,6 +128,16 @@ public class EscapeVelocityModItems {
 	public static final RegistryObject<Item> OIL_REFINERY = REGISTRY.register("oil_refinery", () -> new OilRefineryItem());
 	public static final RegistryObject<Item> OIL_REFINERY_UPSCALED = REGISTRY.register("oil_refinery_upscaled", () -> new OilRefineryUpscaledItem());
 	public static final RegistryObject<Item> OIL_REFINERY_MULTIBLOCK = REGISTRY.register("oil_refinery_multiblock", () -> new OilRefineryMultiblockItem());
+	public static final RegistryObject<Item> LUNAR_COCKPIT = REGISTRY.register("lunar_cockpit", () -> new LunarCockpitItem());
+	public static final RegistryObject<Item> LUNAR_BOOSTER = REGISTRY.register("lunar_booster", () -> new LunarBoosterItem());
+	public static final RegistryObject<Item> LUNAR_STRAP_ON_BOOSTER = REGISTRY.register("lunar_strap_on_booster", () -> new LunarStrapOnBoosterItem());
+	public static final RegistryObject<Item> LUNAR_ROCKET = REGISTRY.register("lunar_rocket", () -> new LunarRocketItem());
+	public static final RegistryObject<Item> ROCKET_BUILDER = block(EscapeVelocityModBlocks.ROCKET_BUILDER);
+	public static final RegistryObject<Item> LUNAR_LANDER_ITEM = REGISTRY.register("lunar_lander_item", () -> new LunarLanderItemItem());
+	public static final RegistryObject<Item> REINFORCED_COMPOSITE_SHEET = REGISTRY.register("reinforced_composite_sheet", () -> new ReinforcedCompositeSheetItem());
+	public static final RegistryObject<Item> ADVANCED_ALLOY_MESH = REGISTRY.register("advanced_alloy_mesh", () -> new AdvancedAlloyMeshItem());
+	public static final RegistryObject<Item> ROCKET_SHEET = REGISTRY.register("rocket_sheet", () -> new RocketSheetItem());
+	public static final RegistryObject<Item> SEALED_CABLE = block(EscapeVelocityModBlocks.SEALED_CABLE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

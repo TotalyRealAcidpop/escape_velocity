@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:reinforced_glass"
+    },
+    "b": {
+      "item": "escape_velocity:rocket_sheet"
+    },
+    "c": {
+      "item": "minecraft:lever"
+    },
+    "d": {
+      "item": "escape_velocity:circuit_board"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:lunar_cockpit",
+    "count": 1
+  }
+}

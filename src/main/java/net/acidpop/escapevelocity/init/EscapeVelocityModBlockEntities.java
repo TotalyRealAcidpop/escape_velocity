@@ -11,6 +11,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.acidpop.escapevelocity.block.entity.SealedCableBlockEntity;
+import net.acidpop.escapevelocity.block.entity.RocketBuilderBlockEntity;
 import net.acidpop.escapevelocity.block.entity.PowerNodeBlockEntity;
 import net.acidpop.escapevelocity.block.entity.HabitatSealerBlockEntity;
 import net.acidpop.escapevelocity.block.entity.FluidTankBlockEntity;
@@ -25,6 +27,8 @@ public class EscapeVelocityModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CABLE = register("cable", EscapeVelocityModBlocks.CABLE, CableBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> POWER_NODE = register("power_node", EscapeVelocityModBlocks.POWER_NODE, PowerNodeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FLUID_TANK = register("fluid_tank", EscapeVelocityModBlocks.FLUID_TANK, FluidTankBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ROCKET_BUILDER = register("rocket_builder", EscapeVelocityModBlocks.ROCKET_BUILDER, RocketBuilderBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SEALED_CABLE = register("sealed_cable", EscapeVelocityModBlocks.SEALED_CABLE, SealedCableBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

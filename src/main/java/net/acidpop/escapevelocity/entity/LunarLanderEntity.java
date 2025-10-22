@@ -90,6 +90,8 @@ public class LunarLanderEntity extends Monster {
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
+		if (damagesource.getDirectEntity() instanceof Player)
+			return false;
 		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
 		if (damagesource.is(DamageTypes.FALL))

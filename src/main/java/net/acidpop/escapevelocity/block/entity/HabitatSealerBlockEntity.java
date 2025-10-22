@@ -2,30 +2,37 @@ package net.acidpop.escapevelocity.block.entity;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
+import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.nbt.IntTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.acidpop.escapevelocity.world.inventory.HabitatSealerUIMenu;
 import net.acidpop.escapevelocity.init.EscapeVelocityModBlockEntities;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+
+import io.netty.buffer.Unpooled;
 
 public class HabitatSealerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
@@ -41,6 +48,10 @@ public class HabitatSealerBlockEntity extends RandomizableContainerBlockEntity i
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
 		ContainerHelper.loadAllItems(compound, this.stacks);
+		if (compound.get("energyStorage") instanceof IntTag intTag)
+			energyStorage.deserializeNBT(intTag);
+		if (compound.get("fluidTank") instanceof CompoundTag compoundTag)
+			fluidTank.readFromNBT(compoundTag);
 	}
 
 	@Override
@@ -49,6 +60,8 @@ public class HabitatSealerBlockEntity extends RandomizableContainerBlockEntity i
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
+		compound.put("energyStorage", energyStorage.serializeNBT());
+		compound.put("fluidTank", fluidTank.writeToNBT(new CompoundTag()));
 	}
 
 	@Override
@@ -86,7 +99,7 @@ public class HabitatSealerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return ChestMenu.threeRows(id, inventory);
+		return new HabitatSealerUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
@@ -124,10 +137,48 @@ public class HabitatSealerBlockEntity extends RandomizableContainerBlockEntity i
 		return true;
 	}
 
+	private final EnergyStorage energyStorage = new EnergyStorage(2000, 2000, 2000, 0) {
+		@Override
+		public int receiveEnergy(int maxReceive, boolean simulate) {
+			int retval = super.receiveEnergy(maxReceive, simulate);
+			if (!simulate) {
+				setChanged();
+				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+			}
+			return retval;
+		}
+
+		@Override
+		public int extractEnergy(int maxExtract, boolean simulate) {
+			int retval = super.extractEnergy(maxExtract, simulate);
+			if (!simulate) {
+				setChanged();
+				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+			}
+			return retval;
+		}
+	};
+	private final FluidTank fluidTank = new FluidTank(8000, fs -> {
+		if (fs.getFluid() == Fluids.WATER)
+			return true;
+		return false;
+	}) {
+		@Override
+		protected void onContentsChanged() {
+			super.onContentsChanged();
+			setChanged();
+			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+		}
+	};
+
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
 			return handlers[facing.ordinal()].cast();
+		if (!this.remove && capability == ForgeCapabilities.ENERGY)
+			return LazyOptional.of(() -> energyStorage).cast();
+		if (!this.remove && capability == ForgeCapabilities.FLUID_HANDLER)
+			return LazyOptional.of(() -> fluidTank).cast();
 		return super.getCapability(capability, facing);
 	}
 

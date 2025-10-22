@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "dbd"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:solar_cell"
+    },
+    "b": {
+      "item": "escape_velocity:rocket_sheet"
+    },
+    "c": {
+      "item": "escape_velocity:reinforced_glass"
+    },
+    "d": {
+      "item": "escape_velocity:rubber_sheet"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:regolith_collector_spawn_egg",
+    "count": 1
+  }
+}

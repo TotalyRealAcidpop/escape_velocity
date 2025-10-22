@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:cable"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:sealed_cable",
+    "count": 1
+  }
+}

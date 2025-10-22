@@ -22,6 +22,7 @@ import net.minecraft.client.Minecraft;
 
 import net.acidpop.escapevelocity.init.EscapeVelocityModMobEffects;
 import net.acidpop.escapevelocity.init.EscapeVelocityModBlocks;
+import net.acidpop.escapevelocity.entity.RegolithCollectorEntity;
 import net.acidpop.escapevelocity.entity.LunarLanderEntity;
 import net.acidpop.escapevelocity.entity.LunaRocketEntity;
 
@@ -57,7 +58,7 @@ public class EntityEffectsProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5, 0, false, false));
 			if (!(entity instanceof LivingEntity _livEnt12 && _livEnt12.getMobType() == MobType.UNDEAD)) {
-				if (!(entity instanceof LunaRocketEntity || entity instanceof LunarLanderEntity)) {
+				if (!(entity instanceof LunaRocketEntity || entity instanceof RegolithCollectorEntity || entity instanceof LunarLanderEntity)) {
 					if (!(new Object() {
 						public boolean checkGamemode(Entity _ent) {
 							if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -79,7 +80,7 @@ public class EntityEffectsProcedure {
 							return false;
 						}
 					}.checkGamemode(entity))) {
-						if (!(entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(EscapeVelocityModMobEffects.PRESSURISED.get()))) {
+						if (!(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(EscapeVelocityModMobEffects.PRESSURISED.get()))) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(EscapeVelocityModMobEffects.RADIATION.get(), 400, 0, false, false));
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
