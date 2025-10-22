@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:beta_composite"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:lunar_suit_boots",
+    "count": 1
+  }
+}

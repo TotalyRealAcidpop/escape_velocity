@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "facing=north,variant=0": {
+      "model": "escape_velocity:block/industrial_furnace"
+    },
+    "facing=east,variant=0": {
+      "model": "escape_velocity:block/industrial_furnace",
+      "y": 90
+    },
+    "facing=south,variant=0": {
+      "model": "escape_velocity:block/industrial_furnace",
+      "y": 180
+    },
+    "facing=west,variant=0": {
+      "model": "escape_velocity:block/industrial_furnace",
+      "y": 270
+    },
+    "variant=1": { "model": "escape_velocity:block/empty" },
+    "variant=2": { "model": "escape_velocity:block/oil_refinery_bottom" },
+    "variant=3": { "model": "escape_velocity:block/oil_refinery_bottom", "y": 90 },
+    "variant=4": { "model": "escape_velocity:block/oil_refinery_bottom", "y": 180 },
+    "variant=5": { "model": "escape_velocity:block/oil_refinery_bottom", "y": 270 }
+  }
+}

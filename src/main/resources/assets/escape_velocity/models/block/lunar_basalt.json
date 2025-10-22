@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/lunar_basalt",
+    "up": "escape_velocity:block/lunar_basalt",
+    "north": "escape_velocity:block/lunar_basalt",
+    "east": "escape_velocity:block/lunar_basalt",
+    "south": "escape_velocity:block/lunar_basalt",
+    "west": "escape_velocity:block/lunar_basalt",
+    "particle": "escape_velocity:block/lunar_basalt"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:solar_cell"
+    },
+    "b": {
+      "tag": "forge:ingots/aluminum"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:solar_panel",
+    "count": 1
+  }
+}

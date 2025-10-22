@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/lunar_regolith",
+    "up": "escape_velocity:block/lunar_regolith",
+    "north": "escape_velocity:block/lunar_regolith",
+    "east": "escape_velocity:block/lunar_regolith",
+    "south": "escape_velocity:block/lunar_regolith",
+    "west": "escape_velocity:block/lunar_regolith",
+    "particle": "escape_velocity:block/lunar_regolith"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:reinforced_glass",
+    "escape_velocity:power_node"
+  ]
+}

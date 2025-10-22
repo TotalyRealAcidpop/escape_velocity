@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/oil_refinery_top",
+  "textures": {
+    "all": "escape_velocity:block/oil_refinery",
+    "particle": "escape_velocity:block/oil_refinery",
+    "9": "escape_velocity:block/oil_refinery"
+  },
+  "render_type": "cutout"
+}

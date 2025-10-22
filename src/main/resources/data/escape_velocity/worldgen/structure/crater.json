@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "escape_velocity:crater",
+  "size": 1,
+  "max_distance_from_center": 64,
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "start_height": {
+    "absolute": -13
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "biomes": "escape_velocity:lunar_surface",
+  "use_expansion_hack": false,
+  "height_limit": {
+    "max_inclusive": {
+      "absolute": 72
+    }
+  }
+}

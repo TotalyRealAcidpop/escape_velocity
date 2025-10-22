@@ -1,0 +1,11 @@
+{
+  "parent": "escape_velocity:custom/solar_array_multiblock",
+  "textures": {
+    "steel_frame": "escape_velocity:block/steel_frame",
+    "power_node": "escape_velocity:block/power_node",
+    "solar_panel_side": "escape_velocity:block/solar_panel_side",
+    "solar_panel_top": "escape_velocity:block/solar_panel_top",
+    "solar_panel_bottom": "escape_velocity:block/solar_panel_bottom",
+    "particle": "minecraft:item/clock_28"
+  }
+}

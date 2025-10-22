@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:aluminium_ore",
+    "escape_velocity:nickel_ore",
+    "escape_velocity:nickel_frame"
+  ]
+}

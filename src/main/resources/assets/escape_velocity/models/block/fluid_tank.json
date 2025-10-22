@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/fluid_tank",
+    "up": "escape_velocity:block/fluid_tank",
+    "north": "escape_velocity:block/fluid_tank",
+    "east": "escape_velocity:block/fluid_tank",
+    "south": "escape_velocity:block/fluid_tank",
+    "west": "escape_velocity:block/fluid_tank",
+    "particle": "escape_velocity:block/fluid_tank"
+  },
+  "render_type": "translucent"
+}

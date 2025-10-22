@@ -1,0 +1,33 @@
+{
+  "type": "escape_velocity:multiblock",
+  "ingredients": [
+    {
+      "item": "escape_velocity:solararray_upscaled"
+    },
+    {
+      "item": "escape_velocity:solararray_multiblock"
+    },
+    {
+      "item": "escape_velocity:steel_frame"
+    },
+    {
+      "item": "escape_velocity:power_node"
+    },
+    {
+      "item": "escape_velocity:solar_panel"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "escape_velocity:solararray",
+    "count": 1
+  }
+}

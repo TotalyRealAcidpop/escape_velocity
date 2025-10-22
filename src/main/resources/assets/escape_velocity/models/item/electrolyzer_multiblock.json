@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/electrolyzer_multiblock",
+  "textures": {
+    "1": "escape_velocity:block/nickel_frame",
+    "2": "escape_velocity:block/fluid_tank",
+    "4": "escape_velocity:block/power_node",
+    "particle": "minecraft:item/compass_14"
+  }
+}

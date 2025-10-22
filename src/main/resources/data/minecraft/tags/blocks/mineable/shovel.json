@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:refractory_brick",
+    "escape_velocity:refractory_mix",
+    "escape_velocity:lunar_regolith"
+  ]
+}

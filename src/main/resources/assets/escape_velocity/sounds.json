@@ -1,0 +1,10 @@
+{
+  "generator": {
+    "sounds": [
+      {
+        "name": "escape_velocity:generator",
+        "stream": false
+      }
+    ]
+  }
+}

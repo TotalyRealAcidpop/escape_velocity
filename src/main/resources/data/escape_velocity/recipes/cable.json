@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "b": {
+      "item": "escape_velocity:rubber_sheet"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:cable",
+    "count": 16
+  }
+}

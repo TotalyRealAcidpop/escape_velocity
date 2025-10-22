@@ -1,0 +1,7 @@
+{
+  "parent": "escape_velocity:custom/oil_refinery_display",
+  "textures": {
+    "0": "escape_velocity:block/oil_refinery",
+    "particle": "minecraft:item/experience_bottle"
+  }
+}

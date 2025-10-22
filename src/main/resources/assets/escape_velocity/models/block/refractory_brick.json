@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/refractory_brick",
+    "up": "escape_velocity:block/refractory_brick",
+    "north": "escape_velocity:block/refractory_brick",
+    "east": "escape_velocity:block/refractory_brick",
+    "south": "escape_velocity:block/refractory_brick",
+    "west": "escape_velocity:block/refractory_brick",
+    "particle": "escape_velocity:block/refractory_brick"
+  },
+  "render_type": "solid"
+}

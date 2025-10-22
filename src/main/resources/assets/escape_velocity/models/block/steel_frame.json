@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/steel_frame",
+    "up": "escape_velocity:block/steel_frame",
+    "north": "escape_velocity:block/steel_frame",
+    "east": "escape_velocity:block/steel_frame",
+    "south": "escape_velocity:block/steel_frame",
+    "west": "escape_velocity:block/steel_frame",
+    "particle": "escape_velocity:block/steel_frame"
+  },
+  "render_type": "cutout"
+}

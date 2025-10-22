@@ -1,0 +1,33 @@
+{
+  "type": "escape_velocity:multiblock",
+  "ingredients": [
+    {
+      "item": "escape_velocity:oil_refinery_upscaled"
+    },
+    {
+      "item": "escape_velocity:oil_refinery_multiblock"
+    },
+    {
+      "item": "escape_velocity:steel_frame"
+    },
+    {
+      "item": "escape_velocity:power_node"
+    },
+    {
+      "item": "escape_velocity:fluid_tank"
+    },
+    {
+      "item": "escape_velocity:industrial_furnace"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "escape_velocity:oil_refinery",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/nickel"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:nickel_frame",
+    "count": 1
+  }
+}

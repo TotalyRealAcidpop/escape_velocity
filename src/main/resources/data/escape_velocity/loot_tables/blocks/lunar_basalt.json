@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "escape_velocity:blocks/lunar_basalt",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "escape_velocity:lunar_basalt"
+        }
+      ]
+    }
+  ]
+}

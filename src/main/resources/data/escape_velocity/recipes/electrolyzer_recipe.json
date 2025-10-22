@@ -1,0 +1,33 @@
+{
+  "type": "escape_velocity:multiblock",
+  "ingredients": [
+    {
+      "item": "escape_velocity:electrolyzer_upscaled"
+    },
+    {
+      "item": "escape_velocity:electrolyzer_multiblock"
+    },
+    {
+      "item": "escape_velocity:nickel_frame"
+    },
+    {
+      "item": "escape_velocity:power_node"
+    },
+    {
+      "item": "escape_velocity:fluid_tank"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    },
+    {
+      "tag": "escape_velocity:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "escape_velocity:electrolyzer",
+    "count": 1
+  }
+}

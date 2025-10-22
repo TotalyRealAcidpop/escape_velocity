@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:aluminium_ingot"
+    },
+    "b": {
+      "item": "escape_velocity:circuit_board"
+    },
+    "c": {
+      "item": "escape_velocity:speaker"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:environmental_audio_module",
+    "count": 1
+  }
+}

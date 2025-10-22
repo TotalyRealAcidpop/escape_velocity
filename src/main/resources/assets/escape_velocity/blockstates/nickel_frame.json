@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "variant=0": { "model": "escape_velocity:block/nickel_frame" },
+    "variant=1": { "model": "escape_velocity:block/empty" }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "escape_velocity:custom/solar_array_display",
+  "textures": {
+    "0": "escape_velocity:block/solar_array",
+    "particle": "minecraft:item/clock_40"
+  }
+}

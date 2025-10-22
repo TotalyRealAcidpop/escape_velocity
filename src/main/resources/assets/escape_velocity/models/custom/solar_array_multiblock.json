@@ -1,0 +1,1606 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    128,
+    128
+  ],
+  "elements": [
+    {
+      "name": "Base",
+      "from": [
+        4.59,
+        -0.44,
+        4.59
+      ],
+      "to": [
+        10.99,
+        5.96,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.99,
+          -0.44,
+          4.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#power_node"
+        }
+      }
+    },
+    {
+      "from": [
+        10.99,
+        -0.44,
+        -1.81
+      ],
+      "to": [
+        17.39,
+        5.96,
+        4.59
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          11.39,
+          -0.44,
+          -1.41
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "from": [
+        -1.81,
+        -0.44,
+        -1.81
+      ],
+      "to": [
+        4.59,
+        5.96,
+        4.59
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -1.41,
+          -0.44,
+          -1.41
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "from": [
+        -1.81,
+        -0.44,
+        10.99
+      ],
+      "to": [
+        4.59,
+        5.96,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -1.41,
+          -0.44,
+          11.39
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "from": [
+        10.99,
+        -0.44,
+        10.99
+      ],
+      "to": [
+        17.39,
+        5.96,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          11.39,
+          -0.44,
+          11.39
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "from": [
+        4.59,
+        5.96,
+        4.59
+      ],
+      "to": [
+        10.99,
+        12.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.99,
+          5.96,
+          4.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "from": [
+        4.59,
+        12.36,
+        4.59
+      ],
+      "to": [
+        10.99,
+        18.76,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.99,
+          12.36,
+          4.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#steel_frame"
+        }
+      }
+    },
+    {
+      "name": "Top",
+      "from": [
+        4.59,
+        18.76,
+        4.59
+      ],
+      "to": [
+        10.99,
+        20.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.59,
+          18.76,
+          4.59
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        10.99,
+        18.76,
+        4.59
+      ],
+      "to": [
+        17.39,
+        20.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          10.99,
+          18.76,
+          4.59
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        -1.81,
+        18.76,
+        4.59
+      ],
+      "to": [
+        4.59,
+        20.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -1.81,
+          18.76,
+          4.59
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "name": "Right",
+      "from": [
+        -8.21,
+        18.76,
+        4.59
+      ],
+      "to": [
+        -1.81,
+        20.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -8.21,
+          18.76,
+          4.59
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "name": "Left",
+      "from": [
+        17.39,
+        18.76,
+        4.59
+      ],
+      "to": [
+        23.79,
+        20.36,
+        10.99
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          17.39,
+          18.76,
+          4.59
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        -8.21,
+        18.76,
+        10.99
+      ],
+      "to": [
+        -1.81,
+        20.36,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -8.21,
+          18.76,
+          10.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        -1.81,
+        18.76,
+        10.99
+      ],
+      "to": [
+        4.59,
+        20.36,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -1.81,
+          18.76,
+          10.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        4.59,
+        18.76,
+        10.99
+      ],
+      "to": [
+        10.99,
+        20.36,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.59,
+          18.76,
+          10.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        10.99,
+        18.76,
+        10.99
+      ],
+      "to": [
+        17.39,
+        20.36,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          10.99,
+          18.76,
+          10.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        17.39,
+        18.76,
+        10.99
+      ],
+      "to": [
+        23.79,
+        20.36,
+        17.39
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          17.39,
+          18.76,
+          10.99
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        -1.81,
+        18.76,
+        -1.81
+      ],
+      "to": [
+        4.59,
+        20.36,
+        4.59
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          -1.81,
+          18.76,
+          -1.81
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        4.59,
+        18.76,
+        -1.81
+      ],
+      "to": [
+        10.99,
+        20.36,
+        4.59
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          4.59,
+          18.76,
+          -1.81
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    },
+    {
+      "from": [
+        10.99,
+        18.76,
+        -1.81
+      ],
+      "to": [
+        17.39,
+        20.36,
+        4.59
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          10.99,
+          18.76,
+          -1.81
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "east": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "south": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "west": {
+          "uv": [
+            16,
+            12,
+            0,
+            7
+          ],
+          "texture": "#solar_panel_side"
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_top"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#solar_panel_bottom"
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        18,
+        145,
+        0
+      ],
+      "translation": [
+        0.5,
+        56.75,
+        0
+      ],
+      "scale": [
+        3.24,
+        3.22,
+        3.28
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "bone",
+      "origin": [
+        6.95,
+        2.4,
+        6.95
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ]
+}

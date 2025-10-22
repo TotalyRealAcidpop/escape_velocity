@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ddd",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "d": {
+      "item": "escape_velocity:silicon"
+    },
+    "e": {
+      "item": "escape_velocity:glass_fiber"
+    },
+    "f": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:circuit_board",
+    "count": 1
+  }
+}

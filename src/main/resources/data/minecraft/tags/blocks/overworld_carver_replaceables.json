@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:lunar_basalt",
+    "escape_velocity:lunar_regolith"
+  ]
+}

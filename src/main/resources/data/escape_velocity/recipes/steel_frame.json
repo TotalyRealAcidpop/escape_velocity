@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:steel_frame",
+    "count": 1
+  }
+}

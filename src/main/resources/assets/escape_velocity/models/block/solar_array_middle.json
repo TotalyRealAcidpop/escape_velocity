@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/solar_array_middle",
+  "textures": {
+    "all": "escape_velocity:block/solar_array",
+    "particle": "escape_velocity:block/solar_array",
+    "0": "escape_velocity:block/solar_array"
+  },
+  "render_type": "cutout"
+}

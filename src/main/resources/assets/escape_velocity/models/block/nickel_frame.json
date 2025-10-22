@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/nickel_frame",
+    "up": "escape_velocity:block/nickel_frame",
+    "north": "escape_velocity:block/nickel_frame",
+    "east": "escape_velocity:block/nickel_frame",
+    "south": "escape_velocity:block/nickel_frame",
+    "west": "escape_velocity:block/nickel_frame",
+    "particle": "escape_velocity:block/nickel_frame"
+  },
+  "render_type": "translucent"
+}

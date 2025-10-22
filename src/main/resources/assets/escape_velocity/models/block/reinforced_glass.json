@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/reinforced_glass",
+    "up": "escape_velocity:block/reinforced_glass",
+    "north": "escape_velocity:block/reinforced_glass",
+    "east": "escape_velocity:block/reinforced_glass",
+    "south": "escape_velocity:block/reinforced_glass",
+    "west": "escape_velocity:block/reinforced_glass",
+    "particle": "escape_velocity:block/reinforced_glass"
+  },
+  "render_type": "translucent"
+}

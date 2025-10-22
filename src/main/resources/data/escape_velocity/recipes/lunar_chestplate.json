@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:beta_composite"
+    },
+    "b": {
+      "item": "escape_velocity:oxygen_tank"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:lunar_suit_chestplate",
+    "count": 1
+  }
+}

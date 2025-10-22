@@ -1,0 +1,11 @@
+{
+  "parent": "escape_velocity:custom/solar_panel",
+  "textures": {
+    "all": "escape_velocity:block/solar_panel_top",
+    "particle": "escape_velocity:block/solar_panel_top",
+    "2": "escape_velocity:block/solar_panel_bottom",
+    "3": "escape_velocity:block/solar_panel_side",
+    "4": "escape_velocity:block/solar_panel_top"
+  },
+  "render_type": "solid"
+}

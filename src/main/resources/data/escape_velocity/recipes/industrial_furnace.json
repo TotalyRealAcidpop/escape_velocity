@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:steel_block"
+    },
+    "b": {
+      "item": "escape_velocity:refractory_brick"
+    },
+    "c": {
+      "item": "minecraft:blast_furnace"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:industrial_furnace",
+    "count": 1
+  }
+}

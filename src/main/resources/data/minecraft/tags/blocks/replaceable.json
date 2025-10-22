@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:oxygen",
+    "escape_velocity:hydrogen",
+    "escape_velocity:liquid_oxygen",
+    "escape_velocity:naphtha",
+    "escape_velocity:kerosene",
+    "escape_velocity:crude_oil"
+  ]
+}

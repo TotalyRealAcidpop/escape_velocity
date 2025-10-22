@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/nickel_ore",
+    "up": "escape_velocity:block/nickel_ore",
+    "north": "escape_velocity:block/nickel_ore",
+    "east": "escape_velocity:block/nickel_ore",
+    "south": "escape_velocity:block/nickel_ore",
+    "west": "escape_velocity:block/nickel_ore",
+    "particle": "escape_velocity:block/nickel_ore"
+  },
+  "render_type": "translucent"
+}

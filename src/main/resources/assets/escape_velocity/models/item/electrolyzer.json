@@ -1,0 +1,7 @@
+{
+  "parent": "escape_velocity:custom/electrolyzer",
+  "textures": {
+    "3": "escape_velocity:block/electrolyzer",
+    "particle": "minecraft:item/compass_14"
+  }
+}

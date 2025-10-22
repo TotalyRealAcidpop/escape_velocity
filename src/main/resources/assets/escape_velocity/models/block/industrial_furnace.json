@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "escape_velocity:block/industrial_furnace_top",
+    "up": "escape_velocity:block/industrial_furnace_top",
+    "north": "escape_velocity:block/industrial_furnace_front",
+    "east": "escape_velocity:block/industrial_furnace_side",
+    "south": "escape_velocity:block/industrial_furnace_side",
+    "west": "escape_velocity:block/industrial_furnace_side",
+    "particle": "escape_velocity:block/industrial_furnace_top"
+  },
+  "render_type": "solid"
+}

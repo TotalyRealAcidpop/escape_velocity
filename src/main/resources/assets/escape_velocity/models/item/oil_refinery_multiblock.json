@@ -1,0 +1,12 @@
+{
+  "parent": "escape_velocity:custom/oil_refinery_multiblock",
+  "textures": {
+    "1": "escape_velocity:block/industrial_furnace_front",
+    "2": "escape_velocity:block/industrial_furnace_top",
+    "3": "escape_velocity:block/industrial_furnace_side",
+    "4": "escape_velocity:block/fluid_tank",
+    "5": "escape_velocity:block/power_node",
+    "6": "escape_velocity:block/steel_frame",
+    "particle": "minecraft:item/experience_bottle"
+  }
+}

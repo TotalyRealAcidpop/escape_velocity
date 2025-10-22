@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "variant=0": { "model": "escape_velocity:block/solar_panel" },
+    "variant=1": { "model": "escape_velocity:block/empty" },
+    "variant=2": { "model": "escape_velocity:block/solar_array_top" },
+    "variant=3": { "model": "escape_velocity:block/solar_array_left" },
+    "variant=4": { "model": "escape_velocity:block/solar_array_right" },
+    
+    "variant=5": { "model": "escape_velocity:block/solar_array_top", "y": 90 },
+    "variant=6": { "model": "escape_velocity:block/solar_array_left", "y": 90 },
+    "variant=7": { "model": "escape_velocity:block/solar_array_right", "y": 90 },
+
+    "variant=8":  { "model": "escape_velocity:block/solar_array_top", "y": 270 },
+    "variant=9":  { "model": "escape_velocity:block/solar_array_left", "y": 270 },
+    "variant=10": { "model": "escape_velocity:block/solar_array_right", "y": 270 },
+
+    "variant=11": { "model": "escape_velocity:block/solar_array_top", "y": 180 },
+    "variant=12": { "model": "escape_velocity:block/solar_array_left", "y": 180 },
+    "variant=13": { "model": "escape_velocity:block/solar_array_right", "y": 180 }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/electrolyzer",
+  "textures": {
+    "all": "escape_velocity:block/electrolyzer",
+    "particle": "escape_velocity:block/electrolyzer",
+    "3": "escape_velocity:block/electrolyzer"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "escape_velocity:electrolyzer_recipe_type_2",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "escape_velocity:hydrogen_container"
+    },
+    {
+      "item": "escape_velocity:electrolyzer_upscaled"
+    }
+  ],
+  "output": {
+    "item": "escape_velocity:oxygen_container",
+    "count": 1
+  }
+}

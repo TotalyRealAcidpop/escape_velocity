@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "escape_velocity:steel_frame",
+    "escape_velocity:solar_panel",
+    "escape_velocity:power_node",
+    "escape_velocity:fluid_tank",
+    "escape_velocity:nickel_frame"
+  ]
+}

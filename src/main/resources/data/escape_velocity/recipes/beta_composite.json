@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ebe"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:beta_cloth"
+    },
+    "b": {
+      "item": "escape_velocity:reinforced_fabric"
+    },
+    "c": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "d": {
+      "item": "minecraft:gold_ingot"
+    },
+    "e": {
+      "item": "escape_velocity:rubber_sheet"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:beta_composite",
+    "count": 3
+  }
+}

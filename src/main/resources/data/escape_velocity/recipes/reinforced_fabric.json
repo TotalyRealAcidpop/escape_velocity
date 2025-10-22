@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:reinforced_fabric",
+    "count": 8
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/cable",
+  "textures": {
+    "all": "escape_velocity:block/cable",
+    "particle": "escape_velocity:block/cable",
+    "3": "escape_velocity:block/cable"
+  },
+  "render_type": "solid"
+}

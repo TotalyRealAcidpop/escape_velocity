@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=0": { "model": "escape_velocity:block/fluid_tank" },
+    "variant=1": { "model": "escape_velocity:block/empty" },
+    "variant=2": { "model": "escape_velocity:block/electrolyzer" },
+    "variant=3": { "model": "escape_velocity:block/electrolyzer", "y": 90 },
+    "variant=4": { "model": "escape_velocity:block/oil_refinery_top" },
+    "variant=5": { "model": "escape_velocity:block/oil_refinery_top", "y": 90 }
+  }
+}

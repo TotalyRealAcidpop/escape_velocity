@@ -1,0 +1,9 @@
+{
+  "parent": "escape_velocity:custom/fluid_pipe_down",
+  "textures": {
+    "all": "escape_velocity:block/fluid_pipe",
+    "particle": "escape_velocity:block/fluid_pipe",
+    "1": "escape_velocity:block/fluid_pipe"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "escape_velocity:reinforced_glass"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "escape_velocity:aluminium_ingot"
+    },
+    "d": {
+      "item": "escape_velocity:rubber_sheet"
+    }
+  },
+  "result": {
+    "item": "escape_velocity:helmet_visor",
+    "count": 1
+  }
+}

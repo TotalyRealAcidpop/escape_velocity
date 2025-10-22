@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=0": { "model": "escape_velocity:block/power_node" },
+    "variant=1": { "model": "escape_velocity:block/empty" },
+    "variant=2": { "model": "escape_velocity:block/solar_array_base" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "escape_velocity:naphtha_bucket"
+    },
+    {
+      "tag": "forge:dusts/sulfur"
+    },
+    {
+      "tag": "forge:dusts/sulfur"
+    }
+  ],
+  "result": {
+    "item": "escape_velocity:rubber_sheet",
+    "count": 1
+  }
+}
